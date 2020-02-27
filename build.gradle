@@ -46,5 +46,5 @@ test.environment([
 ])
 
 bootJar {
-    archiveName = "pal-tracker"
+    archiveName = "pal-tracker.jar"
 }
