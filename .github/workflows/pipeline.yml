@@ -15,7 +15,7 @@ jobs:
         java-version: 11
     - name: Build with Gradle
       run: 
-        chmod +x gradlew
+        sudo chmod +x gradlew && 
         ./gradlew build
     - name: Publish artifact
       uses: actions/upload-artifact@v1
