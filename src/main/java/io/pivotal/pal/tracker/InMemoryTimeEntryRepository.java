@@ -29,10 +29,9 @@ public class InMemoryTimeEntryRepository implements  TimeEntryRepository{
         return items.get(timeEntryId);
     }
 
-    public TimeEntry delete(long timeEntryId) {
+    public void delete(long timeEntryId) {
         TimeEntry entry = items.get(timeEntryId);
         items.remove(timeEntryId);
-        return entry;
     }
 
     public List list() {
