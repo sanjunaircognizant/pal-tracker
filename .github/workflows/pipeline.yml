@@ -2,7 +2,7 @@ name: Pal Tracker Pipeline
 
 on:
   push:
-    branches: [master]
+    branches: [arch]
 
 jobs:
   build-and-publish:
