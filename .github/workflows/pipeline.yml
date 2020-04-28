@@ -14,7 +14,7 @@ jobs:
         with:
           java-version: 11
       - name: Startup MySql
-        uses: samin/mysql-action@v1.3
+        run: sudo service mysql start
       - name: Create test database
         run: |
           mysql -uroot -proot < databases/tracker/create_databases.sql
